@@ -23,7 +23,7 @@
     "tailwindcss-animate": "^1.0.7",
     "@tane/ui": "workspace:*",
     "@tane/config": "workspace:*",
-    "lucide-vue-next": "^0.469.0"
+    "lucide-vue-next": "^1.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
