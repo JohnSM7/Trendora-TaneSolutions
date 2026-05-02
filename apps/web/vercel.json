@@ -5,11 +5,11 @@
   "rewrites": [
     {
       "source": "/app",
-      "destination": "https://trendora-app.vercel.app/app"
+      "destination": "https://trendora-app-tawny.vercel.app/app"
     },
     {
       "source": "/app/:path*",
-      "destination": "https://trendora-app.vercel.app/app/:path*"
+      "destination": "https://trendora-app-tawny.vercel.app/app/:path*"
     }
   ],
   "headers": [
