@@ -1,0 +1,34 @@
+{
+  "name": "@tane/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" astro dev --port 4321",
+    "build": "cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "astro check",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "astro": "^5.1.5",
+    "@astrojs/vue": "^5.0.5",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "^5.1.4",
+    "@tailwindcss/typography": "^0.5.15",
+    "@astrojs/vercel": "^8.0.4",
+    "vue": "^3.5.13",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7",
+    "@tane/ui": "workspace:*",
+    "@tane/config": "workspace:*",
+    "lucide-vue-next": "^0.469.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.7.2",
+    "dotenv": "^17.0.0",
+    "cross-env": "^7.0.3"
+  }
+}

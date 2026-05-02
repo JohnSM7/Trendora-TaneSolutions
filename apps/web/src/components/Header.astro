@@ -1,0 +1,34 @@
+---
+const APP_URL = import.meta.env.PUBLIC_APP_URL ?? 'https://trendora.tanesolutions.com/app'
+---
+
+<header class="border-b bg-background/80 backdrop-blur sticky top-0 z-40">
+  <div class="container flex h-16 items-center justify-between">
+    <a href="/" class="flex items-center gap-2 font-display font-semibold">
+      <span class="grid h-8 w-8 place-items-center rounded-md bg-tane-primary text-white">T</span>
+      <span>Trendora</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm">
+      <a href="/#features" class="hover:text-tane-primary transition">Funcionalidades</a>
+      <a href="/precios" class="hover:text-tane-primary transition">Precios</a>
+      <a href="/verticales/restaurantes" class="hover:text-tane-primary transition">Para restaurantes</a>
+      <a href="/blog" class="hover:text-tane-primary transition">Blog</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a
+        href={APP_URL + '/login'}
+        class="hidden sm:inline-flex text-sm hover:text-tane-primary transition"
+      >
+        Entrar
+      </a>
+      <a
+        href={APP_URL + '/signup'}
+        class="inline-flex items-center justify-center rounded-md bg-tane-primary px-4 py-2 text-sm font-medium text-white hover:bg-tane-primary/90 transition"
+      >
+        Empezar gratis
+      </a>
+    </div>
+  </div>
+</header>

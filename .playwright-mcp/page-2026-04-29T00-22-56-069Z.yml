@@ -1,0 +1,30 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e12]:
+    - complementary [ref=e13]:
+      - generic [ref=e14]:
+        - link "T Trendora" [ref=e15] [cursor=pointer]:
+          - /url: /app/
+          - generic [ref=e16]: T
+          - generic [ref=e17]: Trendora
+        - button "Tema actual Sistema, cambiar a light" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+      - navigation [ref=e21]
+      - generic [ref=e23]:
+        - generic [ref=e24]: rankusx@gmail.com
+        - button "Salir" [ref=e25] [cursor=pointer]
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Hola rankusx@gmail.com" [level=1] [ref=e28]
+        - paragraph [ref=e29]: Elige una organización o crea una nueva.
+        - link "+ Crear nueva organización" [ref=e30] [cursor=pointer]:
+          - /url: /app/onboarding
+  - generic:
+    - img
+  - generic [ref=e31]:
+    - button "Toggle Nuxt DevTools" [ref=e32] [cursor=pointer]:
+      - img [ref=e33]
+    - generic "Page load time" [ref=e36]:
+      - generic [ref=e37]: "625"
+      - generic [ref=e38]: ms
+    - button "Toggle Component Inspector" [ref=e40] [cursor=pointer]:
+      - img [ref=e41]

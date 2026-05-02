@@ -1,0 +1,27 @@
+{
+  "name": "@tane/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts",
+    "./server": "./src/server.ts"
+  },
+  "scripts": {
+    "push": "supabase db push",
+    "diff": "supabase db diff",
+    "reset": "supabase db reset",
+    "gen-types": "supabase gen types typescript --local > src/types.gen.ts",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.10",
+    "@supabase/ssr": "^0.5.2"
+  },
+  "devDependencies": {
+    "supabase": "^2.0.0",
+    "typescript": "^5.7.2"
+  }
+}

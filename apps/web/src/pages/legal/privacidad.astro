@@ -1,0 +1,67 @@
+---
+import Base from '~/layouts/Base.astro'
+import Header from '~/components/Header.astro'
+import Footer from '~/components/Footer.astro'
+---
+
+<Base title="Política de privacidad" description="Cómo tratamos tus datos en Trendora.">
+  <Header />
+
+  <main class="container max-w-3xl py-16 prose prose-neutral">
+    <h1 class="text-4xl font-display font-bold">Política de privacidad</h1>
+    <p class="text-sm text-tane-muted">Última actualización: 25 de abril de 2026.</p>
+
+    <h2 class="text-xl font-semibold mt-8">1. Responsable del tratamiento</h2>
+    <p class="text-tane-muted">
+      Tane Solutions, con domicilio en España (NIF B-XXXXXXXX), es responsable del tratamiento de los datos personales recogidos a través de Trendora ("el Servicio").
+    </p>
+
+    <h2 class="text-xl font-semibold mt-6">2. Datos que tratamos</h2>
+    <p class="text-tane-muted">Tratamos los siguientes datos personales:</p>
+    <ul class="list-disc pl-6 text-tane-muted">
+      <li><strong>Datos de cuenta</strong>: email, nombre, foto de perfil.</li>
+      <li><strong>Datos de uso</strong>: organizaciones, brand kits, contenido generado.</li>
+      <li><strong>Datos técnicos</strong>: IP, dispositivo, navegador, logs de errores (Sentry).</li>
+      <li><strong>Datos analíticos</strong>: eventos de producto agregados (PostHog).</li>
+      <li><strong>Tokens de redes sociales</strong>: gestionados como sub-procesador por Ayrshare.</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6">3. Base legal</h2>
+    <p class="text-tane-muted">
+      Ejecución del contrato (proporcionar el Servicio) e interés legítimo (mejorar el Servicio, prevenir fraude). Para el envío de comunicaciones de marketing, consentimiento que puedes retirar en cualquier momento.
+    </p>
+
+    <h2 class="text-xl font-semibold mt-6">4. Sub-procesadores</h2>
+    <ul class="list-disc pl-6 text-tane-muted">
+      <li><strong>Supabase</strong> (Estonia/EU) — base de datos y autenticación.</li>
+      <li><strong>Vercel</strong> (EE.UU.) — hosting con cláusulas SCC.</li>
+      <li><strong>Stripe</strong> (Irlanda) — procesamiento de pagos.</li>
+      <li><strong>Ayrshare</strong> (EE.UU.) — gestión de redes sociales con SCC.</li>
+      <li><strong>Anthropic, OpenAI, Replicate</strong> — generación con IA (los prompts pueden contener datos del cliente).</li>
+      <li><strong>Resend</strong> (EE.UU.) — emails transaccionales.</li>
+      <li><strong>Sentry</strong> (UE), <strong>PostHog</strong> (UE) — observabilidad.</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6">5. Tus derechos</h2>
+    <p class="text-tane-muted">
+      Tienes derecho de acceso, rectificación, supresión, oposición, limitación y portabilidad. Puedes ejercerlos escribiendo a <a href="mailto:privacidad@tanesolutions.com" class="text-tane-primary">privacidad@tanesolutions.com</a>. Si consideras que hemos vulnerado tus derechos, puedes presentar reclamación ante la AEPD.
+    </p>
+
+    <h2 class="text-xl font-semibold mt-6">6. Retención</h2>
+    <p class="text-tane-muted">
+      Conservamos los datos mientras tengas cuenta activa y hasta 30 días tras la cancelación. Los datos contables se conservan 6 años por obligación legal.
+    </p>
+
+    <h2 class="text-xl font-semibold mt-6">7. Seguridad</h2>
+    <p class="text-tane-muted">
+      Cifrado TLS 1.3 en tránsito, cifrado en reposo, aislamiento por organización vía Row Level Security a nivel de base de datos, política de contraseñas mínimas y autenticación por magic link.
+    </p>
+
+    <h2 class="text-xl font-semibold mt-6">8. Contacto</h2>
+    <p class="text-tane-muted">
+      <a href="mailto:privacidad@tanesolutions.com" class="text-tane-primary">privacidad@tanesolutions.com</a>
+    </p>
+  </main>
+
+  <Footer />
+</Base>

@@ -1,0 +1,7 @@
+- generic [ref=e4]:
+  - link "T Trendora" [ref=e5] [cursor=pointer]:
+    - /url: /app/
+    - generic [ref=e6]: T
+    - generic [ref=e7]: Trendora
+  - paragraph [ref=e10]: Procesando magic link…
+  - paragraph [ref=e11]: © 2026 Tane Solutions

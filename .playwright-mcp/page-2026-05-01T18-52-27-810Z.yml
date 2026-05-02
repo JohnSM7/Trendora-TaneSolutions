@@ -1,0 +1,180 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - link "T Trendora" [ref=e6] [cursor=pointer]:
+          - /url: /app/
+          - generic [ref=e7]: T
+          - generic [ref=e8]: Trendora
+        - button "Tema actual Sistema, cambiar a light" [ref=e9] [cursor=pointer]:
+          - img [ref=e10]
+      - navigation [ref=e12]:
+        - link "Dashboard" [ref=e13] [cursor=pointer]:
+          - /url: /app/pizzeria-test
+        - link "Studio IA" [ref=e14] [cursor=pointer]:
+          - /url: /app/pizzeria-test/studio
+        - link "Calendario" [ref=e15] [cursor=pointer]:
+          - /url: /app/pizzeria-test/calendar
+        - link "Brand Kit" [ref=e16] [cursor=pointer]:
+          - /url: /app/pizzeria-test/brand-kits
+        - link "Analítica" [ref=e17] [cursor=pointer]:
+          - /url: /app/pizzeria-test/analytics
+        - link "Equipo" [ref=e18] [cursor=pointer]:
+          - /url: /app/pizzeria-test/team
+        - link "Ajustes" [ref=e19] [cursor=pointer]:
+          - /url: /app/pizzeria-test/settings
+      - generic [ref=e21]:
+        - generic [ref=e22]: rankusx@gmail.com
+        - button "Salir" [ref=e23] [cursor=pointer]
+    - main [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - heading "Calendario" [level=1] [ref=e28]
+            - paragraph [ref=e29]: Arrastra los posts para reagendar. Haz clic para editar.
+          - link "+ Nuevo post" [ref=e30] [cursor=pointer]:
+            - /url: /app/pizzeria-test/studio
+            - button "+ Nuevo post" [ref=e31]
+        - generic [ref=e33]:
+          - generic [ref=e36]: Borrador
+          - generic [ref=e39]: En revisión
+          - generic [ref=e42]: Aprobado
+          - generic [ref=e45]: Programado
+          - generic [ref=e48]: Publicando
+          - generic [ref=e51]: Publicado
+          - generic [ref=e54]: Falló
+          - generic [ref=e57]: Cancelado
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - button "Mes antes" [ref=e63] [cursor=pointer]:
+                  - img [ref=e64]: 
+                - button "Mes siguiente" [ref=e65] [cursor=pointer]:
+                  - img [ref=e66]: 
+              - button "Hoy" [disabled] [ref=e67]
+            - heading "mayo de 2026" [level=2] [ref=e69]
+            - generic [ref=e71]:
+              - button "Mes" [pressed] [ref=e72] [cursor=pointer]
+              - button "Semana" [ref=e73] [cursor=pointer]
+              - button "Día" [ref=e74] [cursor=pointer]
+          - generic "mayo de 2026" [ref=e75]:
+            - grid [ref=e77]:
+              - rowgroup [ref=e78]:
+                - row "lunes martes miércoles jueves viernes sábado domingo" [ref=e82]:
+                  - columnheader "lunes" [ref=e83]:
+                    - generic "lunes" [ref=e85]: lun
+                  - columnheader "martes" [ref=e86]:
+                    - generic "martes" [ref=e88]: mar
+                  - columnheader "miércoles" [ref=e89]:
+                    - generic "miércoles" [ref=e91]: mié
+                  - columnheader "jueves" [ref=e92]:
+                    - generic "jueves" [ref=e94]: jue
+                  - columnheader "viernes" [ref=e95]:
+                    - generic "viernes" [ref=e97]: vie
+                  - columnheader "sábado" [ref=e98]:
+                    - generic "sábado" [ref=e100]: sáb
+                  - columnheader "domingo" [ref=e101]:
+                    - generic "domingo" [ref=e103]: dom
+              - rowgroup [ref=e104]:
+                - generic [ref=e107]:
+                  - row "27 de abril de 2026 28 de abril de 2026 29 de abril de 2026 30 de abril de 2026 1 de mayo de 2026 2 de mayo de 2026 3 de mayo de 2026" [ref=e109]:
+                    - gridcell "27 de abril de 2026" [ref=e110]:
+                      - generic "27 de abril de 2026" [ref=e113]: "27"
+                    - gridcell "28 de abril de 2026" [ref=e115]:
+                      - generic "28 de abril de 2026" [ref=e118]: "28"
+                    - gridcell "29 de abril de 2026" [ref=e120]:
+                      - generic "29 de abril de 2026" [ref=e123]: "29"
+                    - gridcell "30 de abril de 2026" [ref=e125]:
+                      - generic "30 de abril de 2026" [ref=e128]: "30"
+                    - gridcell "1 de mayo de 2026" [ref=e130]:
+                      - generic "1 de mayo de 2026" [ref=e133]: "1"
+                    - gridcell "2 de mayo de 2026" [ref=e135]:
+                      - generic "2 de mayo de 2026" [ref=e138]: "2"
+                    - gridcell "3 de mayo de 2026" [ref=e140]:
+                      - generic "3 de mayo de 2026" [ref=e143]: "3"
+                  - row "4 de mayo de 2026 5 de mayo de 2026 6 de mayo de 2026 7 de mayo de 2026 8 de mayo de 2026 9 de mayo de 2026 10 de mayo de 2026" [ref=e145]:
+                    - gridcell "4 de mayo de 2026" [ref=e146]:
+                      - generic "4 de mayo de 2026" [ref=e149]: "4"
+                    - gridcell "5 de mayo de 2026" [ref=e151]:
+                      - generic "5 de mayo de 2026" [ref=e154]: "5"
+                    - gridcell "6 de mayo de 2026" [ref=e156]:
+                      - generic "6 de mayo de 2026" [ref=e159]: "6"
+                    - gridcell "7 de mayo de 2026" [ref=e161]:
+                      - generic "7 de mayo de 2026" [ref=e164]: "7"
+                    - gridcell "8 de mayo de 2026" [ref=e166]:
+                      - generic "8 de mayo de 2026" [ref=e169]: "8"
+                    - gridcell "9 de mayo de 2026" [ref=e171]:
+                      - generic "9 de mayo de 2026" [ref=e174]: "9"
+                    - gridcell "10 de mayo de 2026" [ref=e176]:
+                      - generic "10 de mayo de 2026" [ref=e179]: "10"
+                  - row "11 de mayo de 2026 12 de mayo de 2026 13 de mayo de 2026 14 de mayo de 2026 15 de mayo de 2026 16 de mayo de 2026 17 de mayo de 2026" [ref=e181]:
+                    - gridcell "11 de mayo de 2026" [ref=e182]:
+                      - generic "11 de mayo de 2026" [ref=e185]: "11"
+                    - gridcell "12 de mayo de 2026" [ref=e187]:
+                      - generic "12 de mayo de 2026" [ref=e190]: "12"
+                    - gridcell "13 de mayo de 2026" [ref=e192]:
+                      - generic "13 de mayo de 2026" [ref=e195]: "13"
+                    - gridcell "14 de mayo de 2026" [ref=e197]:
+                      - generic "14 de mayo de 2026" [ref=e200]: "14"
+                    - gridcell "15 de mayo de 2026" [ref=e202]:
+                      - generic "15 de mayo de 2026" [ref=e205]: "15"
+                    - gridcell "16 de mayo de 2026" [ref=e207]:
+                      - generic "16 de mayo de 2026" [ref=e210]: "16"
+                    - gridcell "17 de mayo de 2026" [ref=e212]:
+                      - generic "17 de mayo de 2026" [ref=e215]: "17"
+                  - row "18 de mayo de 2026 19 de mayo de 2026 20 de mayo de 2026 21 de mayo de 2026 22 de mayo de 2026 23 de mayo de 2026 24 de mayo de 2026" [ref=e217]:
+                    - gridcell "18 de mayo de 2026" [ref=e218]:
+                      - generic "18 de mayo de 2026" [ref=e221]: "18"
+                    - gridcell "19 de mayo de 2026" [ref=e223]:
+                      - generic "19 de mayo de 2026" [ref=e226]: "19"
+                    - gridcell "20 de mayo de 2026" [ref=e228]:
+                      - generic "20 de mayo de 2026" [ref=e231]: "20"
+                    - gridcell "21 de mayo de 2026" [ref=e233]:
+                      - generic "21 de mayo de 2026" [ref=e236]: "21"
+                    - gridcell "22 de mayo de 2026" [ref=e238]:
+                      - generic "22 de mayo de 2026" [ref=e241]: "22"
+                    - gridcell "23 de mayo de 2026" [ref=e243]:
+                      - generic "23 de mayo de 2026" [ref=e246]: "23"
+                    - gridcell "24 de mayo de 2026" [ref=e248]:
+                      - generic "24 de mayo de 2026" [ref=e251]: "24"
+                  - row "25 de mayo de 2026 26 de mayo de 2026 27 de mayo de 2026 28 de mayo de 2026 29 de mayo de 2026 30 de mayo de 2026 31 de mayo de 2026" [ref=e253]:
+                    - gridcell "25 de mayo de 2026" [ref=e254]:
+                      - generic "25 de mayo de 2026" [ref=e257]: "25"
+                    - gridcell "26 de mayo de 2026" [ref=e259]:
+                      - generic "26 de mayo de 2026" [ref=e262]: "26"
+                    - gridcell "27 de mayo de 2026" [ref=e264]:
+                      - generic "27 de mayo de 2026" [ref=e267]: "27"
+                    - gridcell "28 de mayo de 2026" [ref=e269]:
+                      - generic "28 de mayo de 2026" [ref=e272]: "28"
+                    - gridcell "29 de mayo de 2026" [ref=e274]:
+                      - generic "29 de mayo de 2026" [ref=e277]: "29"
+                    - gridcell "30 de mayo de 2026" [ref=e279]:
+                      - generic "30 de mayo de 2026" [ref=e282]: "30"
+                    - gridcell "31 de mayo de 2026" [ref=e284]:
+                      - generic "31 de mayo de 2026" [ref=e287]: "31"
+                  - row "1 de junio de 2026 2 de junio de 2026 3 de junio de 2026 4 de junio de 2026 5 de junio de 2026 6 de junio de 2026 7 de junio de 2026" [ref=e289]:
+                    - gridcell "1 de junio de 2026" [ref=e290]:
+                      - generic "1 de junio de 2026" [ref=e293]: "1"
+                    - gridcell "2 de junio de 2026" [ref=e295]:
+                      - generic "2 de junio de 2026" [ref=e298]: "2"
+                    - gridcell "3 de junio de 2026" [ref=e300]:
+                      - generic "3 de junio de 2026" [ref=e303]: "3"
+                    - gridcell "4 de junio de 2026" [ref=e305]:
+                      - generic "4 de junio de 2026" [ref=e308]: "4"
+                    - gridcell "5 de junio de 2026" [ref=e310]:
+                      - generic "5 de junio de 2026" [ref=e313]: "5"
+                    - gridcell "6 de junio de 2026" [ref=e315]:
+                      - generic "6 de junio de 2026" [ref=e318]: "6"
+                    - gridcell "7 de junio de 2026" [ref=e320]:
+                      - generic "7 de junio de 2026" [ref=e323]: "7"
+  - generic:
+    - img
+  - generic [ref=e325]:
+    - button "Toggle Nuxt DevTools" [ref=e326] [cursor=pointer]:
+      - img [ref=e327]
+    - generic "Page load time" [ref=e330]:
+      - generic [ref=e331]: "248"
+      - generic [ref=e332]: ms
+    - button "Toggle Component Inspector" [ref=e334] [cursor=pointer]:
+      - img [ref=e335]

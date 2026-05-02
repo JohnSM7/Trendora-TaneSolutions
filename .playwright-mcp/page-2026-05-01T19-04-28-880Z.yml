@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: Aprobación de contenido
+      - heading "Pizzería Test" [level=1] [ref=e10]
+    - alert [ref=e76]:
+      - paragraph [ref=e77]: No se puede mostrar este post
+      - generic [ref=e78]: "Inngest API Error: 401 Event key not found"
+    - paragraph [ref=e8]:
+      - text: Powered by
+      - link "Trendora" [ref=e9] [cursor=pointer]:
+        - /url: https://tanesolutions.com
+  - generic:
+    - img
+  - generic [ref=e62]:
+    - button "Toggle Nuxt DevTools" [ref=e63] [cursor=pointer]:
+      - img [ref=e64]
+    - generic "Page load time" [ref=e67]:
+      - generic [ref=e68]: "17"
+      - generic [ref=e69]: ms
+    - button "Toggle Component Inspector" [ref=e71] [cursor=pointer]:
+      - img [ref=e72]

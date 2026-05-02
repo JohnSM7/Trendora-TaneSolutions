@@ -1,0 +1,37 @@
+name: DB RLS Tests
+
+on:
+  pull_request:
+    paths:
+      - 'packages/db/**'
+
+jobs:
+  rls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Start Supabase
+        working-directory: packages/db
+        run: supabase start
+
+      - name: Apply migrations
+        working-directory: packages/db
+        run: supabase db reset --no-seed
+
+      - name: Run RLS tests
+        working-directory: packages/db
+        run: |
+          # TODO: ejecutar tests pgTAP o Vitest contra DB local que validen
+          # aislamiento entre orgs
+          echo "RLS tests pendientes — añadir suite con pgTAP o Vitest+supabase-js"
+
+      - name: Stop Supabase
+        if: always()
+        working-directory: packages/db
+        run: supabase stop --no-backup

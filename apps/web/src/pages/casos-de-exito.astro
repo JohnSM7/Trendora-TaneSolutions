@@ -1,0 +1,86 @@
+---
+import Base from '~/layouts/Base.astro'
+import Header from '~/components/Header.astro'
+import Footer from '~/components/Footer.astro'
+
+const cases = [
+  {
+    name: 'Pizzería La Strada',
+    sector: 'Restauración',
+    location: 'Madrid',
+    results: '3.4x reservas vía Instagram en 60 días',
+    quote: 'Antes tardaba 5 horas a la semana en redes y publicaba 2 veces. Ahora dedico 30 minutos a aprobar y publicamos cada día. La diferencia se ve en el comedor.',
+    person: 'Marco Rinaldi, fundador',
+  },
+  {
+    name: 'Studio Norte',
+    sector: 'Boutique fitness',
+    location: 'Barcelona',
+    results: '+240% engagement en 90 días, 18 nuevos socios via redes',
+    quote: 'No tengo tiempo de grabar reels todos los días. La IA genera el copy, yo solo grabo cuando me apetece. Y los resultados se notan: la gente nos descubre por TikTok.',
+    person: 'Lucía Marín, fundadora',
+  },
+  {
+    name: 'BrewHaus',
+    sector: 'Cafetería de especialidad',
+    location: 'Valencia',
+    results: 'Top 3 en "cafeterías Valencia" en Google en 4 meses',
+    quote: 'La constancia que nos da Tane es lo que más valoro. Antes publicaba cuando me acordaba; ahora hay un calendario y se cumple.',
+    person: 'David Flores, fundador',
+  },
+] as const
+---
+
+<Base title="Casos de éxito" description="Negocios reales que transformaron su presencia digital con Trendora.">
+  <Header />
+
+  <main>
+    <section class="container max-w-3xl py-16 text-center">
+      <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight">
+        Negocios que se llenaron gracias a sus redes
+      </h1>
+      <p class="mt-4 text-tane-muted text-lg">
+        Resultados reales en 60-120 días. Sin agencia, sin más equipo, solo con Trendora.
+      </p>
+    </section>
+
+    <section class="container max-w-5xl pb-24 space-y-6">
+      {
+        cases.map((c) => (
+          <div class="rounded-2xl border bg-card p-8 md:p-10 grid md:grid-cols-[1fr_2fr] gap-8">
+            <div>
+              <h2 class="text-2xl font-display font-bold">{c.name}</h2>
+              <p class="text-sm text-tane-muted mt-1">
+                {c.sector} · {c.location}
+              </p>
+              <div class="mt-4 rounded-md bg-tane-accent-500/10 px-3 py-2 text-sm">
+                <strong>{c.results}</strong>
+              </div>
+            </div>
+            <div>
+              <p class="text-lg leading-relaxed italic">"{c.quote}"</p>
+              <p class="mt-4 text-sm text-tane-muted">— {c.person}</p>
+            </div>
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="container max-w-3xl pb-24">
+      <div class="rounded-2xl bg-tane-primary text-white p-10 text-center">
+        <h2 class="text-3xl font-display font-bold">¿Tu negocio será el próximo?</h2>
+        <p class="mt-4 text-white/80">
+          Empieza una prueba gratis de 14 días sin tarjeta. Si no te convence, no pagas nada.
+        </p>
+        <a
+          href="/precios"
+          class="mt-6 inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-base font-medium text-tane-primary hover:bg-white/90 transition"
+        >
+          Empezar gratis
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

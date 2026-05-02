@@ -1,0 +1,96 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - link "T Trendora" [ref=e6] [cursor=pointer]:
+          - /url: /app/
+          - generic [ref=e7]: T
+          - generic [ref=e8]: Trendora
+        - button "Tema actual Sistema, cambiar a light" [ref=e9] [cursor=pointer]:
+          - img [ref=e10]
+      - navigation [ref=e12]:
+        - link "Dashboard" [ref=e13] [cursor=pointer]:
+          - /url: /app/pizzeria-test
+        - link "Studio IA" [ref=e14] [cursor=pointer]:
+          - /url: /app/pizzeria-test/studio
+        - link "Calendario" [ref=e15] [cursor=pointer]:
+          - /url: /app/pizzeria-test/calendar
+        - link "Brand Kit" [ref=e16] [cursor=pointer]:
+          - /url: /app/pizzeria-test/brand-kits
+        - link "Analítica" [ref=e17] [cursor=pointer]:
+          - /url: /app/pizzeria-test/analytics
+        - link "Equipo" [ref=e18] [cursor=pointer]:
+          - /url: /app/pizzeria-test/team
+        - link "Ajustes" [ref=e19] [cursor=pointer]:
+          - /url: /app/pizzeria-test/settings
+      - generic [ref=e21]:
+        - generic [ref=e22]: rankusx@gmail.com
+        - button "Salir" [ref=e23] [cursor=pointer]
+    - main [ref=e24]:
+      - generic [ref=e82]:
+        - generic [ref=e84]:
+          - heading "Studio IA" [level=1] [ref=e85]
+          - paragraph [ref=e86]: Genera posts adaptados a cada plataforma a partir de un tema.
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: Tema o mensaje
+              - textbox "Tema o mensaje" [ref=e91]:
+                - /placeholder: "Ej: Anunciar el menú de domingo de Pascua con los nuevos platos de cordero asado."
+                - text: Domingo de pizza al horno de leña, 14h. Reserva tu mesa que se llena rápido.
+            - generic [ref=e92]:
+              - generic [ref=e93]: Plataformas
+              - generic [ref=e94]:
+                - button "Instagram" [ref=e95] [cursor=pointer]
+                - button "Facebook" [ref=e96] [cursor=pointer]
+                - button "LinkedIn" [ref=e97] [cursor=pointer]
+                - button "X (Twitter)" [ref=e98] [cursor=pointer]
+                - button "TikTok" [ref=e99] [cursor=pointer]
+                - button "Threads" [ref=e100] [cursor=pointer]
+                - button "Pinterest" [ref=e101] [cursor=pointer]
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - generic [ref=e104]: Tono
+                - combobox "Tono" [ref=e105]:
+                  - option "Profesional"
+                  - option "Cercano" [selected]
+                  - option "Divertido"
+                  - option "Inspirador"
+                  - option "Urgente"
+              - generic [ref=e106]:
+                - generic [ref=e107]: Longitud
+                - combobox "Longitud" [ref=e108]:
+                  - option "Corta"
+                  - option "Media" [selected]
+                  - option "Larga"
+            - generic [ref=e109]:
+              - generic [ref=e110]: Brand kit
+              - combobox "Brand kit" [ref=e111]:
+                - option "Elige un brand kit" [disabled]
+                - option "Pizzería Test — Marca principal · por defecto" [selected]
+            - generic [ref=e112]:
+              - generic [ref=e113]: Idioma
+              - combobox "Idioma" [ref=e114]:
+                - option "Español" [selected]
+                - option "Inglés"
+                - option "Català"
+            - generic [ref=e115]:
+              - generic [ref=e116]: Incluir hashtags
+              - checkbox [checked] [ref=e117]
+            - generic [ref=e118]:
+              - generic [ref=e119]: Incluir CTA
+              - checkbox [checked] [ref=e120]
+            - button "✨ Generar posts" [ref=e127] [cursor=pointer]
+          - alert [ref=e138]:
+            - paragraph [ref=e139]: Error al generar
+            - generic [ref=e140]: "Invalid schema for response_format 'response': In context=('properties', 'posts', 'items'), 'required' is required to be supplied and to be an array including every key in properties. Missing 'hashtags'."
+  - generic:
+    - img
+  - generic [ref=e68]:
+    - button "Toggle Nuxt DevTools" [ref=e69] [cursor=pointer]:
+      - img [ref=e70]
+    - generic "Page load time" [ref=e73]:
+      - generic [ref=e74]: "995"
+      - generic [ref=e75]: ms
+    - button "Toggle Component Inspector" [ref=e77] [cursor=pointer]:
+      - img [ref=e78]

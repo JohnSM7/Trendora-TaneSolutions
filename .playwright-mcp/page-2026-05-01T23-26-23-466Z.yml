@@ -1,0 +1,98 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - link "T Trendora" [ref=e6] [cursor=pointer]:
+          - /url: /app/
+          - generic [ref=e7]: T
+          - generic [ref=e8]: Trendora
+        - button "Tema actual Oscuro, cambiar a system" [ref=e71] [cursor=pointer]:
+          - img [ref=e72]
+      - navigation [ref=e12]:
+        - link "Dashboard" [ref=e13] [cursor=pointer]:
+          - /url: /app/pizzeria-test
+        - link "Studio IA" [active] [ref=e14] [cursor=pointer]:
+          - /url: /app/pizzeria-test/studio
+        - link "Borradores" [ref=e15] [cursor=pointer]:
+          - /url: /app/pizzeria-test/drafts
+        - link "Calendario" [ref=e16] [cursor=pointer]:
+          - /url: /app/pizzeria-test/calendar
+        - link "Brand Kit" [ref=e17] [cursor=pointer]:
+          - /url: /app/pizzeria-test/brand-kits
+        - link "Analítica" [ref=e18] [cursor=pointer]:
+          - /url: /app/pizzeria-test/analytics
+        - link "Equipo" [ref=e19] [cursor=pointer]:
+          - /url: /app/pizzeria-test/team
+        - link "Ajustes" [ref=e20] [cursor=pointer]:
+          - /url: /app/pizzeria-test/settings
+      - generic [ref=e22]:
+        - generic [ref=e23]: rankusx@gmail.com
+        - button "Salir" [ref=e24] [cursor=pointer]
+    - main [ref=e25]:
+      - generic [ref=e74]:
+        - generic [ref=e76]:
+          - heading "Studio IA" [level=1] [ref=e77]
+          - paragraph [ref=e78]: Genera posts adaptados a cada plataforma a partir de un tema.
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]: Tema o mensaje
+              - textbox "Tema o mensaje" [ref=e83]:
+                - /placeholder: "Ej: Anunciar el menú de domingo de Pascua con los nuevos platos de cordero asado."
+            - generic [ref=e84]:
+              - generic [ref=e85]: Plataformas
+              - generic [ref=e86]:
+                - button "Instagram" [ref=e87] [cursor=pointer]
+                - button "Facebook" [ref=e88] [cursor=pointer]
+                - button "LinkedIn" [ref=e89] [cursor=pointer]
+                - button "X (Twitter)" [ref=e90] [cursor=pointer]
+                - button "TikTok" [ref=e91] [cursor=pointer]
+                - button "Threads" [ref=e92] [cursor=pointer]
+                - button "Pinterest" [ref=e93] [cursor=pointer]
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - generic [ref=e96]: Tono
+                - combobox "Tono" [ref=e97]:
+                  - option "Profesional"
+                  - option "Cercano" [selected]
+                  - option "Divertido"
+                  - option "Inspirador"
+                  - option "Urgente"
+              - generic [ref=e98]:
+                - generic [ref=e99]: Longitud
+                - combobox "Longitud" [ref=e100]:
+                  - option "Corta"
+                  - option "Media" [selected]
+                  - option "Larga"
+            - generic [ref=e101]:
+              - generic [ref=e102]: Brand kit
+              - combobox "Brand kit" [ref=e103]:
+                - option "Elige un brand kit" [disabled]
+                - option "Pizzería Test — Marca principal · por defecto" [selected]
+            - generic [ref=e104]:
+              - generic [ref=e105]: Idioma
+              - combobox "Idioma" [ref=e106]:
+                - option "Español" [selected]
+                - option "Inglés"
+                - option "Català"
+            - generic [ref=e107]:
+              - generic [ref=e108]: Incluir hashtags
+              - checkbox [checked] [ref=e109]
+            - generic [ref=e110]:
+              - generic [ref=e111]: Incluir CTA
+              - checkbox [checked] [ref=e112]
+            - button "✨ Generar posts" [disabled]
+          - generic [ref=e115]:
+            - generic [ref=e116]: 💡
+            - heading "Empieza describiendo qué quieres comunicar" [level=2] [ref=e117]
+            - paragraph [ref=e118]: La IA elegirá longitud, formato y hashtags óptimos por plataforma según tu brand kit.
+  - generic:
+    - img
+  - generic [ref=e119]:
+    - button "Toggle Nuxt DevTools" [ref=e120] [cursor=pointer]:
+      - img [ref=e121]
+    - generic "Page load time" [ref=e124]:
+      - generic [ref=e125]: "185"
+      - generic [ref=e126]: ms
+    - button "Toggle Component Inspector" [ref=e128] [cursor=pointer]:
+      - img [ref=e129]

@@ -1,0 +1,67 @@
+---
+import Base from '~/layouts/Base.astro'
+import Header from '~/components/Header.astro'
+import Footer from '~/components/Footer.astro'
+---
+
+<Base title="Contacto" description="Habla con el equipo de Tane Solutions.">
+  <Header />
+
+  <main class="container max-w-3xl py-16 md:py-24">
+    <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight">Hablemos</h1>
+    <p class="mt-4 text-tane-muted">
+      Si tienes dudas, quieres ver una demo o estás explorando un acuerdo de partner, escríbenos.
+    </p>
+
+    <div class="mt-10 grid md:grid-cols-2 gap-6">
+      <a
+        href="mailto:hola@tanesolutions.com"
+        class="rounded-xl border bg-card p-6 hover:border-tane-primary transition"
+      >
+        <p class="text-2xl mb-2">✉️</p>
+        <h2 class="font-medium">Email</h2>
+        <p class="text-sm text-tane-muted mt-1">hola@tanesolutions.com</p>
+        <p class="text-xs text-tane-muted mt-2">Respondemos en menos de 12 horas laborables.</p>
+      </a>
+
+      <a
+        href="https://cal.com/tane/demo"
+        class="rounded-xl border bg-card p-6 hover:border-tane-primary transition"
+      >
+        <p class="text-2xl mb-2">📅</p>
+        <h2 class="font-medium">Demo 15 min</h2>
+        <p class="text-sm text-tane-muted mt-1">Te enseñamos el producto en directo.</p>
+        <p class="text-xs text-tane-muted mt-2">cal.com/tane/demo</p>
+      </a>
+
+      <a
+        href="https://twitter.com/tanesolutions"
+        class="rounded-xl border bg-card p-6 hover:border-tane-primary transition"
+      >
+        <p class="text-2xl mb-2">𝕏</p>
+        <h2 class="font-medium">X / Twitter</h2>
+        <p class="text-sm text-tane-muted mt-1">Para preguntas rápidas y novedades.</p>
+        <p class="text-xs text-tane-muted mt-2">@tanesolutions</p>
+      </a>
+
+      <a
+        href="https://linkedin.com/company/tane-solutions"
+        class="rounded-xl border bg-card p-6 hover:border-tane-primary transition"
+      >
+        <p class="text-2xl mb-2">in</p>
+        <h2 class="font-medium">LinkedIn</h2>
+        <p class="text-sm text-tane-muted mt-1">Conexiones profesionales y partnerships.</p>
+        <p class="text-xs text-tane-muted mt-2">linkedin.com/company/tane-solutions</p>
+      </a>
+    </div>
+
+    <div class="mt-16 p-6 rounded-xl bg-tane-paper border">
+      <h2 class="font-medium mb-2">Información legal</h2>
+      <p class="text-sm text-tane-muted">
+        Tane Solutions · NIF: B-XXXXXXXX · Dirección: España
+      </p>
+    </div>
+  </main>
+
+  <Footer />
+</Base>

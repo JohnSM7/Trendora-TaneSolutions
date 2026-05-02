@@ -1,0 +1,50 @@
+---
+const year = new Date().getFullYear()
+---
+
+<footer class="border-t mt-24">
+  <div class="container py-12 grid gap-8 md:grid-cols-4 text-sm">
+    <div>
+      <div class="flex items-center gap-2 font-display font-semibold mb-3">
+        <span class="grid h-8 w-8 place-items-center rounded-md bg-tane-primary text-white">T</span>
+        <span>Trendora</span>
+      </div>
+      <p class="text-tane-muted">Tu marca activa en redes, sin estar tú.</p>
+    </div>
+
+    <div>
+      <h3 class="font-medium mb-3">Producto</h3>
+      <ul class="space-y-2 text-tane-muted">
+        <li><a href="/#features" class="hover:text-foreground">Funcionalidades</a></li>
+        <li><a href="/precios" class="hover:text-foreground">Precios</a></li>
+        <li><a href="/changelog" class="hover:text-foreground">Changelog</a></li>
+        <li><a href="/roadmap" class="hover:text-foreground">Roadmap</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-medium mb-3">Recursos</h3>
+      <ul class="space-y-2 text-tane-muted">
+        <li><a href="/blog" class="hover:text-foreground">Blog</a></li>
+        <li><a href="/casos-de-exito" class="hover:text-foreground">Casos de éxito</a></li>
+        <li><a href="/docs" class="hover:text-foreground">Documentación</a></li>
+        <li><a href="https://status.trendora.tanesolutions.com" class="hover:text-foreground">Status</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-medium mb-3">Empresa</h3>
+      <ul class="space-y-2 text-tane-muted">
+        <li><a href="/sobre-nosotros" class="hover:text-foreground">Sobre Tane</a></li>
+        <li><a href="/contacto" class="hover:text-foreground">Contacto</a></li>
+        <li><a href="/legal/privacidad" class="hover:text-foreground">Privacidad</a></li>
+        <li><a href="/legal/terminos" class="hover:text-foreground">Términos</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container border-t py-6 text-xs text-tane-muted flex flex-col md:flex-row gap-2 justify-between">
+    <p>© {year} Tane Solutions. Todos los derechos reservados.</p>
+    <p>Hecho con ❤️ en España.</p>
+  </div>
+</footer>

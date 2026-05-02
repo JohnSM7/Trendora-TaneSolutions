@@ -1,0 +1,66 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e67]:
+    - complementary [ref=e68]:
+      - generic [ref=e69]:
+        - link "T Trendora" [ref=e70] [cursor=pointer]:
+          - /url: /app/
+          - generic [ref=e71]: T
+          - generic [ref=e72]: Trendora
+        - button "Tema actual Sistema, cambiar a light" [ref=e73] [cursor=pointer]:
+          - img [ref=e74]
+      - navigation [ref=e76]:
+        - link "Dashboard" [ref=e77] [cursor=pointer]:
+          - /url: /app/pizzeria-test
+        - link "Studio IA" [ref=e78] [cursor=pointer]:
+          - /url: /app/pizzeria-test/studio
+        - link "Calendario" [ref=e79] [cursor=pointer]:
+          - /url: /app/pizzeria-test/calendar
+        - link "Brand Kit" [ref=e80] [cursor=pointer]:
+          - /url: /app/pizzeria-test/brand-kits
+        - link "Analítica" [ref=e81] [cursor=pointer]:
+          - /url: /app/pizzeria-test/analytics
+        - link "Equipo" [ref=e82] [cursor=pointer]:
+          - /url: /app/pizzeria-test/team
+        - link "Ajustes" [ref=e83] [cursor=pointer]:
+          - /url: /app/pizzeria-test/settings
+      - generic [ref=e85]:
+        - generic [ref=e86]: rankusx@gmail.com
+        - button "Salir" [ref=e87] [cursor=pointer]
+    - main [ref=e88]:
+      - generic [ref=e89]:
+        - heading "Pizzería Test" [level=1] [ref=e90]
+        - paragraph [ref=e91]: Resumen de tu actividad social esta semana.
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - paragraph [ref=e94]: Posts publicados
+            - paragraph [ref=e95]: —
+            - paragraph [ref=e96]: últimos 7 días
+          - generic [ref=e97]:
+            - paragraph [ref=e98]: Posts programados
+            - paragraph [ref=e99]: —
+            - paragraph [ref=e100]: próximos 7 días
+          - generic [ref=e101]:
+            - paragraph [ref=e102]: Créditos IA
+            - paragraph [ref=e103]: —
+            - paragraph [ref=e104]: restantes este ciclo
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - heading "Conecta tus redes" [level=3] [ref=e107]
+            - paragraph [ref=e108]: Conecta Instagram, Facebook, LinkedIn y más en un solo paso.
+            - link "Conectar redes" [ref=e109] [cursor=pointer]:
+              - /url: /app/pizzeria-test/settings/social
+          - generic [ref=e110]:
+            - heading "Genera tu primer post con IA" [level=3] [ref=e111]
+            - paragraph [ref=e112]: Define tu marca y deja que la IA cree contenido en tu voz.
+            - link "Abrir Studio" [ref=e113] [cursor=pointer]:
+              - /url: /app/pizzeria-test/studio
+  - generic:
+    - img
+  - generic [ref=e31]:
+    - button "Toggle Nuxt DevTools" [ref=e32] [cursor=pointer]:
+      - img [ref=e33]
+    - generic "Page load time" [ref=e36]:
+      - generic [ref=e37]: "37"
+      - generic [ref=e38]: ms
+    - button "Toggle Component Inspector" [ref=e40] [cursor=pointer]:
+      - img [ref=e41]

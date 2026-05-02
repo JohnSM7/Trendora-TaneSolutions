@@ -1,0 +1,161 @@
+---
+import Base from '~/layouts/Base.astro'
+import Header from '~/components/Header.astro'
+import Footer from '~/components/Footer.astro'
+
+const APP_URL = import.meta.env.PUBLIC_APP_URL ?? 'https://trendora.tanesolutions.com/app'
+
+const features = [
+  {
+    title: 'Genera con IA',
+    body: 'Brand kit propio + Claude 4.7 + imagen generativa adaptan el tono de tu negocio a cada plataforma.',
+    icon: '🪄',
+  },
+  {
+    title: 'Programa en un calendario',
+    body: 'Arrastra y suelta. Vista mensual, semanal, por canal. Reagendar en un clic.',
+    icon: '📅',
+  },
+  {
+    title: 'Aprueba con un toque',
+    body: 'El cliente recibe un link y aprueba o pide cambios sin entrar en la plataforma.',
+    icon: '✅',
+  },
+  {
+    title: 'Publica automáticamente',
+    body: 'Instagram, Facebook, LinkedIn, TikTok, X, Threads, YouTube y más. Sin tocar nada.',
+    icon: '🚀',
+  },
+  {
+    title: 'Analiza el impacto',
+    body: 'Métricas reales por post y plataforma. Mejor hora, mejor formato, qué funciona.',
+    icon: '📊',
+  },
+  {
+    title: 'Trabajo en equipo',
+    body: 'Roles, comentarios, notas internas. Para agencias y para negocios con varios responsables.',
+    icon: '👥',
+  },
+]
+---
+
+<Base title="Trendora">
+  <Header />
+
+  <main>
+    <!-- HERO -->
+    <section class="container py-20 md:py-28">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="inline-flex items-center gap-2 rounded-full border bg-tane-primary/5 px-3 py-1 text-xs text-tane-primary mb-6">
+          <span class="h-2 w-2 rounded-full bg-tane-accent"></span>
+          Lanzamiento privado abierto · plazas limitadas
+        </p>
+
+        <h1 class="text-4xl md:text-6xl font-display font-bold tracking-tight">
+          Tu marca activa en redes,
+          <span class="text-tane-primary">sin estar tú.</span>
+        </h1>
+
+        <p class="mt-6 text-lg md:text-xl text-tane-muted">
+          Trendora genera, programa y publica todo tu contenido social con inteligencia
+          artificial entrenada con tu marca. Tú solo apruebas.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href={APP_URL + '/signup'}
+            class="inline-flex h-12 items-center justify-center rounded-md bg-tane-primary px-8 text-base font-medium text-white hover:bg-tane-primary/90 transition"
+          >
+            Empezar prueba gratis · 14 días
+          </a>
+          <a
+            href="/precios"
+            class="inline-flex h-12 items-center justify-center rounded-md border px-8 text-base font-medium hover:bg-accent transition"
+          >
+            Ver precios
+          </a>
+        </div>
+
+        <p class="mt-4 text-xs text-tane-muted">Sin tarjeta · Cancela cuando quieras</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="container py-16 md:py-24">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">
+          Todo lo que necesitas para tener tus redes activas
+        </h2>
+        <p class="mt-4 text-tane-muted">
+          Una hora al mes para tener todo el mes de contenido publicado.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {
+          features.map((f) => (
+            <div class="rounded-xl border bg-card p-6 hover:border-tane-primary/30 transition">
+              <div class="text-2xl mb-3">{f.icon}</div>
+              <h3 class="font-medium mb-2">{f.title}</h3>
+              <p class="text-sm text-tane-muted">{f.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- VERTICALES (programmatic SEO entry) -->
+    <section class="container py-16 md:py-24 border-t">
+      <div class="max-w-2xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">
+          Hecho a medida para tu sector
+        </h2>
+        <p class="mt-4 text-tane-muted">
+          Plantillas, prompts y assets afinados para cada tipo de negocio.
+        </p>
+      </div>
+
+      <div class="grid gap-3 md:grid-cols-3 lg:grid-cols-4 max-w-5xl mx-auto">
+        {
+          [
+            'Restaurantes',
+            'Cafeterías',
+            'Bares',
+            'Gimnasios',
+            'Clínicas dentales',
+            'Peluquerías',
+            'Tiendas físicas',
+            'SaaS B2B',
+          ].map((v) => (
+            <a
+              href={`/verticales/${v.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, '-')}`}
+              class="rounded-lg border p-4 text-sm hover:border-tane-primary hover:bg-tane-primary/5 transition"
+            >
+              {v} →
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container py-16 md:py-24">
+      <div class="rounded-2xl bg-tane-primary text-white p-10 md:p-16 text-center max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-display font-bold tracking-tight">
+          ¿Listo para recuperar tus tardes?
+        </h2>
+        <p class="mt-4 text-white/80 max-w-xl mx-auto">
+          Empieza gratis durante 14 días, sin tarjeta. Si no te convence, no pagas nada.
+        </p>
+        <a
+          href={APP_URL + '/signup'}
+          class="mt-8 inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-base font-medium text-tane-primary hover:bg-white/90 transition"
+        >
+          Crear mi cuenta
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

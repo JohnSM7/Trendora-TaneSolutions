@@ -1,0 +1,7 @@
+- generic [ref=e4]:
+  - paragraph [ref=e6]: Aprobación de contenido
+  - generic [ref=e7]: Cargando…
+  - paragraph [ref=e8]:
+    - text: Powered by
+    - link "Trendora" [ref=e9] [cursor=pointer]:
+      - /url: https://tanesolutions.com

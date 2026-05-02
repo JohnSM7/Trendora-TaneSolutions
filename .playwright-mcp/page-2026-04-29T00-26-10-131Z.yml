@@ -1,0 +1,43 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e46]:
+    - link "T Trendora" [ref=e47] [cursor=pointer]:
+      - /url: /app/
+      - generic [ref=e48]: T
+      - generic [ref=e49]: Trendora
+    - generic [ref=e51]:
+      - heading "Crea tu organización" [level=1] [ref=e52]
+      - paragraph [ref=e53]: Una organización por marca o cliente. Podrás añadir más después.
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - text: Nombre de la organización
+          - textbox "Nombre de la organización" [ref=e56]:
+            - /placeholder: Pizzería La Strada
+        - generic [ref=e57]:
+          - text: URL en Tane
+          - generic [ref=e58]:
+            - generic [ref=e59]: app.trendora.tanesolutions.com/
+            - textbox "URL en Tane" [ref=e60]
+          - paragraph [ref=e61]: Solo minúsculas, números y guiones.
+        - generic [ref=e62]:
+          - text: Sector
+          - combobox "Sector" [ref=e63]:
+            - option "Restaurante / bar / cafetería" [selected]
+            - option "Gimnasio / fitness"
+            - option "Clínica dental"
+            - option "Peluquería / barbería"
+            - option "Tienda física / comercio"
+            - option "SaaS B2B / startup"
+            - option "Otro"
+          - paragraph [ref=e64]: Lo usamos para afinar plantillas y prompts a tu nicho.
+        - button "Crear organización" [disabled] [ref=e65]
+    - paragraph [ref=e66]: © 2026 Tane Solutions
+  - generic:
+    - img
+  - generic [ref=e31]:
+    - button "Toggle Nuxt DevTools" [ref=e32] [cursor=pointer]:
+      - img [ref=e33]
+    - generic "Page load time" [ref=e36]:
+      - generic [ref=e37]: "53"
+      - generic [ref=e38]: ms
+    - button "Toggle Component Inspector" [ref=e40] [cursor=pointer]:
+      - img [ref=e41]

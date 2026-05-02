@@ -1,0 +1,65 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: Aprobación de contenido
+      - heading "Pizzería Test" [level=1] [ref=e10]
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Para 2 de mayo de 2026, 21:01
+        - generic [ref=e14]: instagram
+        - generic [ref=e15]: facebook
+        - generic [ref=e16]: linkedin
+      - generic [ref=e17]:
+        - tablist [ref=e18]:
+          - tab "instagram" [selected] [ref=e19] [cursor=pointer]
+          - tab "facebook" [ref=e20] [cursor=pointer]
+          - tab "linkedin" [ref=e21] [cursor=pointer]
+        - tabpanel [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - generic [ref=e25]:
+                - generic [ref=e27]: T
+                - generic [ref=e28]:
+                  - paragraph [ref=e29]: "@tu_marca"
+                  - paragraph [ref=e30]: Hace un momento
+                - generic [ref=e31]: ⋯
+              - generic [ref=e33]:
+                - img [ref=e34]
+                - text: Imagen del post
+              - generic [ref=e38]:
+                - generic [ref=e39]: ♡
+                - generic [ref=e40]: 💬
+                - generic [ref=e41]: ↗
+                - generic [ref=e42]: 📑
+              - paragraph [ref=e44]: "@tu_marca 🍕 Pizza margherita del horno de leña, hoy a las 20h. Música en directo y vino de la casa. Te esperamos! #PizzaArtesanal #Hor… ver más"
+            - generic [ref=e45]:
+              - paragraph [ref=e46]: Texto completo
+              - paragraph [ref=e47]: "🍕 Pizza margherita del horno de leña, hoy a las 20h. Música en directo y vino de la casa. Te esperamos! #PizzaArtesanal #HornoDeLeña"
+              - generic [ref=e48]:
+                - paragraph [ref=e49]: Hashtags
+                - generic [ref=e50]:
+                  - generic [ref=e51]: "#PizzaArtesanal"
+                  - generic [ref=e52]: "#HornoDeLeña"
+                  - generic [ref=e53]: "#PizzaNapoletana"
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Comentarios (opcional)
+          - textbox "¿Algún cambio? Cuéntanoslo aquí." [ref=e57]
+        - generic [ref=e58]:
+          - button "✋ Pedir cambios" [ref=e59] [cursor=pointer]
+          - button "✅ Aprobar y programar" [ref=e60] [cursor=pointer]
+      - paragraph [ref=e61]: Enlace válido hasta 8/5/2026
+    - paragraph [ref=e8]:
+      - text: Powered by
+      - link "Trendora" [ref=e9] [cursor=pointer]:
+        - /url: https://tanesolutions.com
+  - generic:
+    - img
+  - generic [ref=e62]:
+    - button "Toggle Nuxt DevTools" [ref=e63] [cursor=pointer]:
+      - img [ref=e64]
+    - generic "Page load time" [ref=e67]:
+      - generic [ref=e68]: "17"
+      - generic [ref=e69]: ms
+    - button "Toggle Component Inspector" [ref=e71] [cursor=pointer]:
+      - img [ref=e72]

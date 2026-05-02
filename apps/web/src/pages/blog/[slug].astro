@@ -1,0 +1,64 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content'
+import Base from '~/layouts/Base.astro'
+import Header from '~/components/Header.astro'
+import Footer from '~/components/Footer.astro'
+
+type BlogPost = CollectionEntry<'blog'>
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }: BlogPost) => !data.draft)
+  return posts.map((post: BlogPost) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }))
+}
+
+interface Props {
+  post: CollectionEntry<'blog'>
+}
+
+const { post } = Astro.props
+const { Content } = await post.render()
+---
+
+<Base
+  title={post.data.title}
+  description={post.data.description}
+  ogImage={post.data.cover}
+>
+  <Header />
+
+  <main class="container max-w-3xl py-16">
+    <article class="prose prose-neutral max-w-none">
+      <p class="text-xs text-tane-muted">
+        {
+          post.data.publishedAt.toLocaleDateString('es-ES', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })
+        }
+        · {post.data.author}
+      </p>
+      <Content />
+
+      <hr class="my-12" />
+
+      <div class="rounded-xl bg-tane-primary/5 border border-tane-primary/20 p-6 not-prose">
+        <h3 class="font-display font-semibold mb-2">¿Quieres aplicar esto sin esfuerzo?</h3>
+        <p class="text-tane-muted text-sm mb-4">
+          Trendora hace exactamente esto, automáticamente. 14 días gratis sin tarjeta.
+        </p>
+        <a
+          href="/precios"
+          class="inline-flex items-center justify-center rounded-md bg-tane-primary px-6 py-2.5 text-sm font-medium text-white hover:bg-tane-primary/90 transition"
+        >
+          Ver precios →
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Base>

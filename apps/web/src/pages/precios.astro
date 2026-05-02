@@ -1,0 +1,145 @@
+---
+import Base from '~/layouts/Base.astro'
+import Header from '~/components/Header.astro'
+import Footer from '~/components/Footer.astro'
+
+const APP_URL = import.meta.env.PUBLIC_APP_URL ?? 'https://trendora.tanesolutions.com/app'
+
+const plans = [
+  {
+    id: 'starter',
+    name: 'Starter',
+    tagline: 'Para autónomos y micro-negocios.',
+    monthly: 99,
+    yearly: 79,
+    features: [
+      '3 redes sociales',
+      '60 posts publicados / mes',
+      '200 créditos IA / mes',
+      '1 brand kit',
+      '1 usuario',
+      'Calendario y aprobación',
+      'Analytics básicos (30 días)',
+      'Soporte email (48h)',
+    ],
+    cta: 'Empezar 14 días gratis',
+    highlight: false,
+  },
+  {
+    id: 'pro',
+    name: 'Pro',
+    tagline: 'Para negocios establecidos.',
+    monthly: 249,
+    yearly: 199,
+    features: [
+      '8 redes sociales',
+      'Posts ilimitados',
+      '1.000 créditos IA / mes',
+      '3 brand kits',
+      '5 usuarios',
+      'Aprobación cliente con link público',
+      'Analytics avanzados (12 meses)',
+      'Repurposing automático',
+      'Soporte prioritario (12h)',
+      'Onboarding 1:1 incluido',
+    ],
+    cta: 'Empezar 14 días gratis',
+    highlight: true,
+  },
+  {
+    id: 'agency',
+    name: 'Agency',
+    tagline: 'Para agencias y multi-marca.',
+    monthly: 599,
+    yearly: 479,
+    features: [
+      '30 redes sociales',
+      'Posts ilimitados',
+      '5.000 créditos IA / mes',
+      'Brand kits ilimitados',
+      '15 usuarios',
+      'White-label parcial',
+      'Multi-organización',
+      'Reportes white-label en PDF',
+      'API access',
+      'Account Manager dedicado',
+    ],
+    cta: 'Hablar con ventas',
+    highlight: false,
+  },
+]
+---
+
+<Base
+  title="Precios"
+  description="Planes desde 99 €/mes. 14 días gratis sin tarjeta. Cancela cuando quieras."
+>
+  <Header />
+
+  <main class="container py-16 md:py-24">
+    <div class="max-w-2xl mx-auto text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-display font-bold tracking-tight">
+        Precios simples. Sin sorpresas.
+      </h1>
+      <p class="mt-4 text-tane-muted">
+        Empieza gratis, paga cuando estés convencido. Anual con un 20% de descuento.
+      </p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+      {
+        plans.map((p) => (
+          <div
+            class:list={[
+              'rounded-2xl border p-8 flex flex-col',
+              p.highlight
+                ? 'border-tane-primary ring-2 ring-tane-primary/20 relative'
+                : 'border-border',
+            ]}
+          >
+            {p.highlight && (
+              <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-tane-primary text-white text-xs px-3 py-1 rounded-full">
+                Más popular
+              </span>
+            )}
+            <h2 class="text-xl font-medium">{p.name}</h2>
+            <p class="text-sm text-tane-muted mt-1">{p.tagline}</p>
+
+            <div class="mt-6">
+              <span class="text-4xl font-display font-bold">{p.monthly} €</span>
+              <span class="text-tane-muted text-sm">/mes</span>
+              <p class="text-xs text-tane-muted mt-1">o {p.yearly} €/mes facturado anual</p>
+            </div>
+
+            <ul class="mt-6 space-y-2 text-sm flex-1">
+              {p.features.map((f) => (
+                <li class="flex items-start gap-2">
+                  <span class="text-tane-accent-500 mt-0.5">✓</span>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href={p.id === 'agency' ? '/contacto' : APP_URL + '/signup?plan=' + p.id}
+              class:list={[
+                'mt-8 inline-flex h-11 items-center justify-center rounded-md font-medium text-sm transition',
+                p.highlight
+                  ? 'bg-tane-primary text-white hover:bg-tane-primary/90'
+                  : 'border hover:bg-accent',
+              ]}
+            >
+              {p.cta}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+
+    <p class="text-center text-xs text-tane-muted mt-10">
+      Todos los precios sin IVA. Facturación electrónica española disponible.
+    </p>
+  </main>
+
+  <Footer />
+</Base>

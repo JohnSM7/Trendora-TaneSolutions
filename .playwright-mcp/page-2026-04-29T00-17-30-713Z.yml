@@ -1,0 +1,142 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "T Trendora" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: T
+        - generic [ref=e6]: Trendora
+      - navigation [ref=e7]:
+        - link "Funcionalidades" [ref=e8] [cursor=pointer]:
+          - /url: /#features
+        - link "Precios" [ref=e9] [cursor=pointer]:
+          - /url: /precios
+        - link "Para restaurantes" [ref=e10] [cursor=pointer]:
+          - /url: /verticales/restaurantes
+        - link "Blog" [ref=e11] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e12]:
+        - link "Entrar" [ref=e13] [cursor=pointer]:
+          - /url: https://trendora.tanesolutions.com/app/login
+        - link "Empezar gratis" [ref=e14] [cursor=pointer]:
+          - /url: https://trendora.tanesolutions.com/app/signup
+  - main [ref=e15]:
+    - generic [ref=e17]:
+      - paragraph [ref=e18]: Lanzamiento privado abierto · plazas limitadas
+      - heading "Tu marca activa en redes, sin estar tú." [level=1] [ref=e20]
+      - paragraph [ref=e21]: Trendora genera, programa y publica todo tu contenido social con inteligencia artificial entrenada con tu marca. Tú solo apruebas.
+      - generic [ref=e22]:
+        - link "Empezar prueba gratis · 14 días" [ref=e23] [cursor=pointer]:
+          - /url: https://trendora.tanesolutions.com/app/signup
+        - link "Ver precios" [ref=e24] [cursor=pointer]:
+          - /url: /precios
+      - paragraph [ref=e25]: Sin tarjeta · Cancela cuando quieras
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Todo lo que necesitas para tener tus redes activas" [level=2] [ref=e28]
+        - paragraph [ref=e29]: Una hora al mes para tener todo el mes de contenido publicado.
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]: 🪄
+          - heading "Genera con IA" [level=3] [ref=e33]
+          - paragraph [ref=e34]: Brand kit propio + Claude 4.7 + imagen generativa adaptan el tono de tu negocio a cada plataforma.
+        - generic [ref=e35]:
+          - generic [ref=e36]: 📅
+          - heading "Programa en un calendario" [level=3] [ref=e37]
+          - paragraph [ref=e38]: Arrastra y suelta. Vista mensual, semanal, por canal. Reagendar en un clic.
+        - generic [ref=e39]:
+          - generic [ref=e40]: ✅
+          - heading "Aprueba con un toque" [level=3] [ref=e41]
+          - paragraph [ref=e42]: El cliente recibe un link y aprueba o pide cambios sin entrar en la plataforma.
+        - generic [ref=e43]:
+          - generic [ref=e44]: 🚀
+          - heading "Publica automáticamente" [level=3] [ref=e45]
+          - paragraph [ref=e46]: Instagram, Facebook, LinkedIn, TikTok, X, Threads, YouTube y más. Sin tocar nada.
+        - generic [ref=e47]:
+          - generic [ref=e48]: 📊
+          - heading "Analiza el impacto" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Métricas reales por post y plataforma. Mejor hora, mejor formato, qué funciona.
+        - generic [ref=e51]:
+          - generic [ref=e52]: 👥
+          - heading "Trabajo en equipo" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Roles, comentarios, notas internas. Para agencias y para negocios con varios responsables.
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - heading "Hecho a medida para tu sector" [level=2] [ref=e57]
+        - paragraph [ref=e58]: Plantillas, prompts y assets afinados para cada tipo de negocio.
+      - generic [ref=e59]:
+        - link "Restaurantes →" [ref=e60] [cursor=pointer]:
+          - /url: /verticales/restaurantes
+        - link "Cafeterías →" [ref=e61] [cursor=pointer]:
+          - /url: /verticales/cafeterias
+        - link "Bares →" [ref=e62] [cursor=pointer]:
+          - /url: /verticales/bares
+        - link "Gimnasios →" [ref=e63] [cursor=pointer]:
+          - /url: /verticales/gimnasios
+        - link "Clínicas dentales →" [ref=e64] [cursor=pointer]:
+          - /url: /verticales/clinicas-dentales
+        - link "Peluquerías →" [ref=e65] [cursor=pointer]:
+          - /url: /verticales/peluquerias
+        - link "Tiendas físicas →" [ref=e66] [cursor=pointer]:
+          - /url: /verticales/tiendas-fisicas
+        - link "SaaS B2B →" [ref=e67] [cursor=pointer]:
+          - /url: /verticales/saas-b2b
+    - generic [ref=e69]:
+      - heading "¿Listo para recuperar tus tardes?" [level=2] [ref=e70]
+      - paragraph [ref=e71]: Empieza gratis durante 14 días, sin tarjeta. Si no te convence, no pagas nada.
+      - link "Crear mi cuenta" [ref=e72] [cursor=pointer]:
+        - /url: https://trendora.tanesolutions.com/app/signup
+  - contentinfo [ref=e73]:
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: T
+          - generic [ref=e78]: Trendora
+        - paragraph [ref=e79]: Tu marca activa en redes, sin estar tú.
+      - generic [ref=e80]:
+        - heading "Producto" [level=3] [ref=e81]
+        - list [ref=e82]:
+          - listitem [ref=e83]:
+            - link "Funcionalidades" [ref=e84] [cursor=pointer]:
+              - /url: /#features
+          - listitem [ref=e85]:
+            - link "Precios" [ref=e86] [cursor=pointer]:
+              - /url: /precios
+          - listitem [ref=e87]:
+            - link "Changelog" [ref=e88] [cursor=pointer]:
+              - /url: /changelog
+          - listitem [ref=e89]:
+            - link "Roadmap" [ref=e90] [cursor=pointer]:
+              - /url: /roadmap
+      - generic [ref=e91]:
+        - heading "Recursos" [level=3] [ref=e92]
+        - list [ref=e93]:
+          - listitem [ref=e94]:
+            - link "Blog" [ref=e95] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e96]:
+            - link "Casos de éxito" [ref=e97] [cursor=pointer]:
+              - /url: /casos-de-exito
+          - listitem [ref=e98]:
+            - link "Documentación" [ref=e99] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e100]:
+            - link "Status" [ref=e101] [cursor=pointer]:
+              - /url: https://status.trendora.tanesolutions.com
+      - generic [ref=e102]:
+        - heading "Empresa" [level=3] [ref=e103]
+        - list [ref=e104]:
+          - listitem [ref=e105]:
+            - link "Sobre Tane" [ref=e106] [cursor=pointer]:
+              - /url: /sobre-nosotros
+          - listitem [ref=e107]:
+            - link "Contacto" [ref=e108] [cursor=pointer]:
+              - /url: /contacto
+          - listitem [ref=e109]:
+            - link "Privacidad" [ref=e110] [cursor=pointer]:
+              - /url: /legal/privacidad
+          - listitem [ref=e111]:
+            - link "Términos" [ref=e112] [cursor=pointer]:
+              - /url: /legal/terminos
+    - generic [ref=e113]:
+      - paragraph [ref=e114]: © 2026 Tane Solutions. Todos los derechos reservados.
+      - paragraph [ref=e115]: Hecho con ❤️ en España.

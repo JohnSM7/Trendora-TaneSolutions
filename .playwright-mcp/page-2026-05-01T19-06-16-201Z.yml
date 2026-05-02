@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: Aprobación de contenido
+      - heading "Pizzería Test" [level=1] [ref=e10]
+    - generic [ref=e76]:
+      - generic [ref=e77]: ✅
+      - heading "¡Aprobado!" [level=2] [ref=e78]
+      - paragraph [ref=e79]: El equipo programará la publicación en breve. Puedes cerrar esta pestaña.
+    - paragraph [ref=e8]:
+      - text: Powered by
+      - link "Trendora" [ref=e9] [cursor=pointer]:
+        - /url: https://tanesolutions.com
+  - generic:
+    - img
+  - generic [ref=e62]:
+    - button "Toggle Nuxt DevTools" [ref=e63] [cursor=pointer]:
+      - img [ref=e64]
+    - generic "Page load time" [ref=e67]:
+      - generic [ref=e68]: "6"
+      - generic [ref=e69]: ms
+    - button "Toggle Component Inspector" [ref=e71] [cursor=pointer]:
+      - img [ref=e72]

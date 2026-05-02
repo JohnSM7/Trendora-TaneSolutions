@@ -1,0 +1,42 @@
+---
+import Base from '~/layouts/Base.astro'
+import Header from '~/components/Header.astro'
+import Footer from '~/components/Footer.astro'
+---
+
+<Base title="Política de cookies">
+  <Header />
+
+  <main class="container max-w-3xl py-16 prose prose-neutral">
+    <h1 class="text-4xl font-display font-bold">Política de cookies</h1>
+    <p class="text-sm text-tane-muted">Última actualización: 25 de abril de 2026.</p>
+
+    <p class="text-tane-muted mt-6">
+      Trendora usa cookies y tecnologías similares para los siguientes propósitos:
+    </p>
+
+    <h2 class="text-xl font-semibold mt-6">1. Cookies estrictamente necesarias</h2>
+    <p class="text-tane-muted">
+      Mantienen tu sesión y preferencias mínimas. Son obligatorias para que el Servicio funcione.
+    </p>
+    <ul class="list-disc pl-6 text-tane-muted">
+      <li><code>sb-access-token</code>, <code>sb-refresh-token</code> — sesión de Supabase Auth</li>
+      <li><code>tane-theme</code> — preferencia tema dark/light</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6">2. Cookies analíticas (opcionales)</h2>
+    <p class="text-tane-muted">
+      Solo si das consentimiento. Nos ayudan a entender cómo se usa el producto.
+    </p>
+    <ul class="list-disc pl-6 text-tane-muted">
+      <li><code>ph_*</code> — PostHog (anónimo, hosting EU)</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6">3. Gestión</h2>
+    <p class="text-tane-muted">
+      Puedes aceptar o rechazar las cookies opcionales desde el banner que mostramos en tu primera visita, o cambiarlo en cualquier momento desde "Preferencias de cookies" en el footer.
+    </p>
+  </main>
+
+  <Footer />
+</Base>
