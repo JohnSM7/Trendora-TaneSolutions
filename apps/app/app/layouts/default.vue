@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const user = useSupabaseUser()
 const { currentOrg } = useCurrentOrg()
+const { isAdmin } = useIsAdmin()
 
 const nav = computed(() => {
   if (!currentOrg.value) return []
@@ -48,7 +49,15 @@ async function logout() {
         </NuxtLink>
       </nav>
 
-      <div class="p-3 border-t">
+      <div class="p-3 border-t space-y-2">
+        <NuxtLink
+          v-if="isAdmin"
+          to="/admin"
+          class="flex items-center gap-2 rounded-md px-3 py-2 text-xs bg-amber-500/10 text-amber-700 dark:text-amber-300 hover:bg-amber-500/20 transition"
+        >
+          <span>⚡</span>
+          <span class="font-medium">Modo admin</span>
+        </NuxtLink>
         <div class="flex items-center justify-between gap-3 text-xs">
           <span class="truncate">{{ user?.email }}</span>
           <button class="text-tane-muted hover:text-foreground" @click="logout">Salir</button>
