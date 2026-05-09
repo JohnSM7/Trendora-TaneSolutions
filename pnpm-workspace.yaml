@@ -8,6 +8,6 @@ catalog:
   vue: ^3.5.13
   zod: ^3.24.1
   "@supabase/supabase-js": ^2.47.10
-  "@anthropic-ai/sdk": ^0.40.1
-  ai: ^4.0.0
+  "@anthropic-ai/sdk": ^0.95.1
+  ai: ^6.0.177
   stripe: ^17.5.0
