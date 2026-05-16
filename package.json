@@ -27,7 +27,7 @@
     "inngest:dev": "pnpm --filter @tane/app inngest:dev"
   },
   "devDependencies": {
-    "turbo": "^2.5.0",
+    "turbo": "^2.9.14",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "typescript": "^5.7.2",
